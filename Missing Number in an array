@@ -1,0 +1,16 @@
+class Solution {
+    int missingNum(int arr[]) {
+        long n=arr.length+1;
+        long esum=n*(n+1)/2;
+        long sum=0;
+        int tsum=0;
+        for(int i:arr)
+        {
+            sum=sum+i;
+        }
+        tsum=(int)(esum-sum);
+        return tsum;
+        
+        
+    }
+}
